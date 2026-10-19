@@ -12,8 +12,8 @@ Na folha **Aplicações**, preencher Nome, Descrição, Link, Categoria, Ícone,
 
 - Google Sheet criada e privada, com duas folhas e validação de visibilidade.
 - Interface pronta, sem dados fictícios. A marca gráfica é provisória, não é o logótipo oficial.
-- Serviço Apps Script fornecido em `Code.gs`, ainda por instalar e autorizar.
-- `config.js` tem o endpoint vazio intencionalmente. O site apresenta estado de preparação até ser configurado.
+- Serviço Apps Script publicado (versão 3), com Google Sheets API e permissão apenas de leitura.
+- `config.js` aponta para o serviço real publicado. Verificado em 19/10/2026: oito apps visíveis devolvidas sem autenticação.
 - GitHub Pages ainda por ativar. Não foi criado um endereço de produção.
 
 ## Ligar a Google Sheet
@@ -36,6 +36,6 @@ Não há compilação nem dependências para executar o portal. Os ficheiros `Co
 
 ## Verificações
 
-Executar `node --test tests/service.test.cjs` para verificar filtragem, ordem, cabeçalhos, ocultação, callback e respostas de erro do serviço. Verificação final com endpoint Google real e publicação Pages pendente até à autorização/implementação Google.
+Executar `node --test tests/service.test.cjs` para verificar filtragem, ordem, cabeçalhos, ocultação, callback e respostas de erro do serviço. Endpoint Google real verificado em 19/10/2026: oito apps visíveis. Publicação Pages pendente da confirmação adicional de identidade exigida pelo GitHub para tornar o repositório público.
 
 Referências: [Google Apps Script Web Apps](https://developers.google.com/apps-script/guides/web), [Content Service e JSONP](https://developers.google.com/apps-script/guides/content).
